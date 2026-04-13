@@ -1,0 +1,6 @@
+/* Extra globals on top of styles/theme.css */
+
+code {
+  font-family: "JetBrains Mono", source-code-pro, Menlo, Monaco, Consolas,
+    monospace;
+}

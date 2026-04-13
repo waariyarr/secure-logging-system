@@ -1,0 +1,39 @@
+{
+  "name": "secure-logging-backend",
+  "version": "1.0.0",
+  "description": "Blockchain-based Secure Logging and Threat Detection System",
+  "main": "backend/src/app.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node backend/src/app.js",
+    "dev": "nodemon backend/src/app.js",
+    "client": "npm start --prefix frontend",
+    "build:client": "npm run build --prefix frontend",
+    "simulate": "node backend/scripts/simulate-real-usage.js",
+    "mongo:local": "powershell -ExecutionPolicy Bypass -File scripts/start-mongo.ps1"
+  },
+  "keywords": [
+    "blockchain",
+    "cybersecurity",
+    "logging",
+    "threat-detection",
+    "forensics"
+  ],
+  "author": "Raj",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^7.1.1",
+    "mongoose": "^8.5.1",
+    "morgan": "^1.10.1",
+    "web3": "^4.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
